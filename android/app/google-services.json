@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "795330742027",
-    "firebase_url": "https://easytrans-6f384.firebaseio.com",
-    "project_id": "easytrans-6f384",
-    "storage_bucket": "easytrans-6f384.appspot.com"
+    "project_number": "959530749903",
+    "firebase_url": "https://easytrans-280120.firebaseio.com",
+    "project_id": "easytrans-280120",
+    "storage_bucket": "easytrans-280120.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:795330742027:android:485e4500f606fd9f28440e",
+        "mobilesdk_app_id": "1:959530749903:android:75d4ee34074d35594eccba",
         "android_client_info": {
           "package_name": "com.easytrans"
         }
       },
       "oauth_client": [
         {
-          "client_id": "795330742027-puioak75an30h1iavlbkbe969abjd8ka.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.easytrans",
-            "certificate_hash": "28005b5af9f7db4b1149250ba390d76dea8b11a2"
-          }
-        },
-        {
-          "client_id": "795330742027-vh7i2ti9gs6uqg784oecrtiehu25aqhf.apps.googleusercontent.com",
+          "client_id": "959530749903-s9jcnleraur3ib1i8oumvf163je9iuuh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBhA2b_ocytafLc3NbgyqyGhdzu8sKq240"
+          "current_key": "AIzaSyAouRGtyp30bI4b4jOBfrk876OtgjI_mn0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "795330742027-vh7i2ti9gs6uqg784oecrtiehu25aqhf.apps.googleusercontent.com",
+              "client_id": "959530749903-s9jcnleraur3ib1i8oumvf163je9iuuh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

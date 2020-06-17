@@ -1,6 +1,10 @@
-# easytrans
+# EasyTrans-Your Pocket Transport Companion (Map Implementation)
 
-EasyTrans-Your Pocket Transport Companion
+## Don't forget to insert your APIKEY for the project to work
+
+Insert your API key for android (android ->> app ->> src ->> main ->> manifest)
+Insert your API key for android (android ->> app ->> build.gradle)
+Insert your API key for android (android ->> build.gradle)
 
 ## Getting Started
 
