@@ -94,8 +94,9 @@ class AppState with ChangeNotifier {
   // ADD A MARKER ON THE MAP
   void _addMarker(LatLng location, String address) {
     print("MARKERS ADDING");
+    _markers.clear();
     _markers.add(Marker(
-        markerId: MarkerId(_lastPosition.toString()), // Provide different ID for every marker used
+        markerId: MarkerId(address), // Provide different ID for every marker used
         position: location,
         infoWindow: InfoWindow(title: address, snippet: "Go here"), // Specify basic information on marker
         icon: BitmapDescriptor.defaultMarker));
@@ -108,6 +109,7 @@ class AppState with ChangeNotifier {
     List<LatLng> results = <LatLng>[];
     results.add(source);
     results.add(destination);
+    _polyLines.clear();
     _polyLines.add(Polyline(
         polylineId: PolylineId(_lastPosition.toString()),
         width: 10,
@@ -115,5 +117,4 @@ class AppState with ChangeNotifier {
         color: pink));
     notifyListeners();
   }
-
 }

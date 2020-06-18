@@ -104,7 +104,7 @@ class _MapState extends State<Map> {
                     cursorColor: Colors.black,
                     controller: appState.locationController,
                     textInputAction: TextInputAction.go,
-                    onSubmitted: (value) {
+                    onChanged: (value) {
                       print("SOURCE VALUE SUBMITTED: $value");
                       appState.source(value);
                     },
@@ -118,7 +118,7 @@ class _MapState extends State<Map> {
                           color: pink,
                         ),
                       ),
-                      hintText: "Source ?",
+                      hintText: "Enter The Source...",
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.only(left: 15.0, top: 5.0),
                     ),
@@ -166,7 +166,7 @@ class _MapState extends State<Map> {
                           color: pink,
                         ),
                       ),
-                      hintText: "Destination ?",
+                      hintText: "Enter The Destination...",
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.only(left: 15.0, top: 5.0),
                     ),
