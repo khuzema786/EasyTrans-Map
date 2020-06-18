@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class AppState with ChangeNotifier {
   static LatLng _initialPosition;
@@ -23,9 +24,32 @@ class AppState with ChangeNotifier {
   Set<Polyline> get polyLines => _polyLines;
 
   AppState() {
+    _getPermission();
     _getUserLocation();
     _loadingInitialPosition();
   }
+
+  // Ask permission for location
+  Future<void> _getPermission() async {
+    var status = await Permission.location.status;
+    if (status.isUndetermined) {
+      // We didn't ask for permission yet.
+      Permission.location.request();
+    }
+
+// You can can also directly ask the permission about its status.
+    if (await Permission.location.isDenied) {
+      // The OS restricts access, for example because of parental controls.
+      Permission.location.request();
+    }
+    if(await Permission.location.isPermanentlyDenied){
+      // The user opted to never again see the permission request dialog for this
+      // app. The only way to change the permission's status now is to let the
+      // user manually enable it in the system settings.
+      openAppSettings();
+    }
+  }
+
 // TO GET THE USERS LOCATION
   void _getUserLocation() async {
     print("GET USER METHOD RUNNING =========");
